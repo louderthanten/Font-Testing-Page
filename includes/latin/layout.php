@@ -1,4 +1,4 @@
-<div style="width: 960px;" contenteditable="true">
+<div contenteditable="true">
 	<p class="sizelabel">Heading 60px, Subhead 24px, Body 16px</p>
 	<p style="font-size: 60px;">Doubts over insect-bite treatment</p>
 	

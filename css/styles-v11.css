@@ -1,0 +1,314 @@
+/*----------------------------------------------------------------------------------------------------
+Variables
+---------------------------------------------------------------------------------------------------*/  
+:root {
+  --width: 100%;
+  --radius: 3px;
+
+  --black: black;
+  --off-white: #eee;
+  --light-grey: #ccc;
+  --grey: #999;
+  --dark-grey: #333;
+  --white: white;
+  --foreground: var(--black);
+  --background: var(--white);
+  
+  --default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --line-height: 24;
+  --base: 16;
+  --line: calc((var(--line-height) / var(--base)) * 1rem);
+  
+  --size-1: 12;
+  --line-1: calc(var(--line-height) * 0.75);
+
+  --size-2: 13;
+  --line-2: calc(var(--line-height) * 0.75);
+
+  --size-3: 16;
+  --line-3: calc(var(--line-height) * 1);
+
+  --size-4: 18;
+  --line-4: calc(var(--line-height) * 1);
+
+  --size-5: 21;
+  --line-5: calc(var(--line-height) * 1.2);
+
+  --size-6: 24;
+  --line-6: calc(var(--line-height) * 1.25);
+
+  --size-7: 32;
+  --line-7: calc(var(--line-height) * 1.333);
+
+  --size-8: 36;
+  --line-8: calc(var(--line-height) * 1.333);
+
+  --size-9: 48;
+  --line-8: calc(var(--line-height) * 2);
+
+  --size-10: 72;
+  --line-110: calc(var(--line-height) * 3);
+
+  --font-size-1: calc((var(--size-1) / var(--base)) * 1rem);
+  --font-size-2: calc((var(--size-2) / var(--base)) * 1rem);
+  --font-size-3: calc((var(--size-3) / var(--base)) * 1rem);
+  --font-size-4: calc((var(--size-4) / var(--base)) * 1rem);
+  --font-size-5: calc((var(--size-5) / var(--base)) * 1rem);
+  --font-size-6: calc((var(--size-6) / var(--base)) * 1rem);
+  --font-size-7: calc((var(--size-7) / var(--base)) * 1rem);
+  --font-size-8: calc((var(--size-8) / var(--base)) * 1rem);
+  --font-size-9: calc((var(--size-9) / var(--base)) * 1rem);
+  --font-size-10: calc((var(--size-10) / var(--base)) * 1rem);
+  --line-height-1: calc(var(--line-1) / var(--size-1));
+  --line-height-2: calc(var(--line-2) / var(--size-2));
+  --line-height-3: calc(var(--line-3) / var(--size-3));
+  --line-height-4: calc(var(--line-4) / var(--size-4));
+  --line-height-5: calc(var(--line-5) / var(--size-5));
+  --line-height-6: calc(var(--line-6) / var(--size-6));
+  --line-height-7: calc(var(--line-7) / var(--size-7));
+  --line-height-8: calc(var(--line-8) / var(--size-8));
+  --line-height-9: calc(var(--line-9) / var(--size-9));
+  --line-height-10: calc(var(--line-10) / var(--size-10));
+}
+
+/*----------------------------------------------------------------------------------------------------
+  General styles
+  ---------------------------------------------------------------------------------------------------*/
+  html {
+    font-size: 100%;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--default);
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-3);
+  }
+  h1,
+  h2,
+  h3,
+  h4 { 
+    font-weight: normal;
+    margin: 0;
+  }
+  ol {
+    padding-left: 0px;
+    list-style-position: inside;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*----------------------------------------------------------------------------------------------------
+    Top
+    ---------------------------------------------------------------------------------------------------*/
+  header {
+    border: 2px dashed var(--grey);
+    border-radius: var(--radius);
+    margin: calc(var(--line) * 3) var(--line) var(--line) var(--line);
+  }
+  header h1 {
+    padding: calc(var(--line) * 1.5) var(--line);
+  }
+  
+  /* Font Selection */
+  #fonts {
+    width: var(--width);
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: var(--off-white);
+  }
+  #fonts li {
+    display: inline-block;
+    list-style: none;
+    padding: calc(var(--line) * 0.5) var(--line);
+    cursor: pointer;
+  }
+  li.active {
+    background: var(--foreground);
+    color: var(--background);
+  }
+  
+  /* OT Features Panel */
+  #toggleotfeatures {
+    margin: 0 var(--line);
+    padding: 0 calc(var(--line) * 0.5);
+    background-color: var(--off-white);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-2);
+    color: var(--grey);
+  }
+  #toggleotfeatures a {
+    color: var(--black); 
+    text-decoration: none;
+    padding: calc(var(--line) * 0.5) calc(var(--line) * 0.25);
+    display: inline-block;
+  }
+  #editions { float: right; }
+  
+  /* OT Panel (Features / Variations) */
+  .otpanel {
+    margin: 0 var(--line);
+    padding: calc(var(--line) * 0.25) 0;
+    background: var(--dark-grey);
+    color: var(--light-grey);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-2);
+  }
+  .otpanel table td {
+    padding: calc(var(--line) * 0.25) calc(var(--line) * 0.5);
+  }
+  .csscode {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: calc(var(--line) * 0.25);
+    margin-bottom: calc(var(--line) * 0.5);
+  }
+  input[type="range"] {
+    -webkit-appearance: none;
+    margin: 0;
+    background:transparent;
+    margin-top: calc(var(--line) * 0.125);
+    margin-bottom: 0;
+    border: none;
+    padding:0;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    cursor: pointer;
+    transition: all .2s ease;
+    background: var(--grey);
+    height: 1px;
+  }
+  input[type="range"]::-ms-track {
+    cursor: pointer;
+    transition: all .2s ease;
+    background: var(--grey);
+    height: 1px;
+  }
+  input[type="range"]::-moz-range-track {
+    cursor: pointer;
+    transition: all .2s ease;
+    background: var(--grey);
+    height: 1px;
+  }
+  
+  /*-----------------------------------------------------------------------------------------------------
+    Content
+    ---------------------------------------------------------------------------------------------------*/
+  #custom p {
+    margin: 0;
+  }
+  #custom p.sizelabel {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+    color: var(--grey);
+  }
+  /* Navigation */
+  .tabNavigation {
+    overflow: hidden;
+    list-style: none;
+    margin: var(--line);
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-2);
+    border-bottom: 1px solid var(--light-grey);
+    padding-left: calc(var(--line) * 0.25);
+    font-family: var(--default);
+  }
+  .tabNavigation li {
+    display: inline-block;
+    margin:0;
+  }
+  .tabNavigation li a {
+    display: block;
+    padding: calc(var(--line) * 0.25) calc(var(--line) * 0.5);
+    margin-right:1px;
+    color: var(--black);
+    text-decoration: none;
+    background-color: var(--light-grey);
+  }
+
+  .tabNavigation li a.selected,
+  .tabNavigation li a:hover {
+    color: var(--white);
+    background-color: var(--dark-grey);
+  }
+  .tabNavigation li:first-child a {
+    border-top-left-radius: var(--radius);
+  }
+  .tabNavigation li:last-child a {
+    border-top-right-radius: var(--radius);
+  }
+  .tabNavigation li a:focus { outline: 0; }
+  
+  /* Default Styles for all tabs */
+  div.tabs > div { padding: var(--line); }
+  
+  /* Is this rule still used? If no longer used then it can be removed... */
+  div.tabs > div h2 { margin-top: 0; } 
+  
+  /* Rules for changing case*/
+  .lowercase {
+    text-transform: lowercase;
+  }
+  .capitalized {
+    text-transform: capitalize;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  /*-----------------------------------------------------------------------------------------------------
+    Tab Specific Rules:
+    - If the rule is used in multiple tabs, put it here
+    - If the rule is only used in one specific tab and nowhere else, put it inline into the tab html
+    ---------------------------------------------------------------------------------------------------*/
+  
+  .nowrap .textline {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  #text {
+    display: grid;
+    grid-template-columns: minmax(0, 37em) minmax(0, 37em);
+    grid-gap: var(--line);
+  }
+  
+  /* Used for the Unicode Tables and Unicode Lists */
+  .bigslot { font-size: 50px; }
+  
+  /* Used for the Layout tabs */
+  .multicolumn3 {
+    column-count: 3;
+    column-gap: var(--line);
+  }
+  
+  /* 100 pixel ruler background */
+  .ruler100pixels {
+    background: #ffffff url('../images/100pixels.png') repeat-x left top;
+  }
+  
+  /* This is only used in the "Ruder" tab, should be moved to inline css into the ruder.php include file */  
+  #ruder td { font-size: 32px; line-height: 1; margin: 0; padding: 4px; }
+  
+  /* This is only used in the "Ngrams" tab, should be moved to inline css into the ngrams.php include file */  
+  #ngrams td { font-size: 32px; line-height: 1.4; margin: 0; padding: 4px; }
+  
+  /*-----------------------------------------------------------------------------------------------------
+    Footer
+    ---------------------------------------------------------------------------------------------------*/
+  #footer {
+    padding: var(--line);
+  }
+  #footer p {
+    color: var(--grey);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+  }
+  #footer a { color: var(--grey); }
+  

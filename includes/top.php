@@ -81,7 +81,7 @@
 		</tr>
 		<tr>
 			<td colspan="3">
-				<p style="margin: 0 0 6px;">Recommended CSS:</p>
+				<p>Recommended CSS:</p>
 				<p id="csscode" class="csscode"></p>
 			</td>
 		</tr>

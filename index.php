@@ -4,7 +4,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Font Testing Page - Latin Version</title>
-<link type="text/css" href="css/styles-v10.css?rand=<?php echo rand(5,500)?>" rel="stylesheet" charset="utf-8" />
+<link type="text/css" href="css/normalize.css" rel="stylesheet" charset="utf-8" />
+<link type="text/css" href="css/styles-v11.css?rand=<?php echo rand(5,500)?>" rel="stylesheet" charset="utf-8" />
 <link type="text/css" href="css/print-v9.css" rel="stylesheet" media="print" charset="utf-8" />
 <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
 <script>localStorage.clear();</script>
@@ -43,6 +44,7 @@ $(document).ready(function(){
 	    <li><a href="#caps">Words</a></li>
 	    <li><a href="#allcaps">Caps</a></li>
 	    <li><a href="#layout">Layout</a></li>
+	    <li><a href="#sizing">Sizing</a></li>
 	    <li><a href="#lettering">Lettering</a></li>
 	    <li><a href="#kern">Kern</a></li>
 	    <li><a href="#hinting">Hinting</a></li>
@@ -51,44 +53,44 @@ $(document).ready(function(){
 	  </ul>
 	
 	  <!-- Headlines (Content injected via constants.js) -->
-	  <div id="headlines">
-		<div style="white-space: nowrap; overflow: hidden; width: 960px;"></div>
+	  <div id="headlines" class="nowrap">
+		<div></div>
 	  </div>
 	  
 	  <!-- Text (Content injected via Javascript) -->
-	  <div id="text" style="width: 960px;">
+	  <div id="text">
 			<div class="textsettingCol1"></div>
 			<div class="textsettingCol2"></div>
 	  </div>
 
 	  <!-- adhesion (Content injected via constants.js) -->
-	  <div id="adhesion">
-	  		<div style="white-space: nowrap; overflow: hidden; width: 960px;"></div>			
+	  <div id="adhesion" class="nowrap">
+	  		<div></div>			
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
-			<div style="width: 960px;">
+			<div>
 				<div class="textsettingCol1"></div>
 				<div class="textsettingCol2"></div>
 			</div>
 	  </div>
 
 	  <!-- hamburgefonstiv (Content injected via constants.js) -->
-	  <div id="hamburgefonstiv">
-	  		<div style="white-space: nowrap; overflow: hidden; width: 960px;" ></div>				
+	  <div id="hamburgefonstiv" class="nowrap">
+	  		<div></div>				
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
-			<div style="width: 960px;">
+			<div>
 				<div class="textsettingCol1"></div>
 				<div class="textsettingCol2"></div>
 			</div>
 	  </div>
 
 	  <!-- Lowercases a-z (Content injected via constants.js) -->
-	  <div id="lowercases">
-	  		<div style="white-space: nowrap; overflow: hidden; width: 960px;"></div>				
+	  <div id="lowercases" class="nowrap">
+	  		<div></div>				
 			<p>&nbsp;</p>
 			<p>&nbsp;</p>
-			<div style="width: 960px;">
+			<div>
 				<div class="textsettingCol1"></div>
 				<div class="textsettingCol2"></div>
 			</div>
@@ -96,17 +98,22 @@ $(document).ready(function(){
 
 	  <!-- Caps (Content injected via constants.js) -->
 	  <div id="caps">
-	  		<div style="width: 960px;"></div>				
+	  		<div></div>				
 	  </div>
 
 	  <!-- All Caps (Content injected via constants.js) -->
 	  <div id="allcaps">
-	  		<div style="width: 960px;"></div>				
+	  		<div></div>				
 	  </div>
 
 	  <!-- Layout -->
 	  <div id="layout">
 	  	<?php include("includes/latin/layout.php"); ?>						
+		</div>
+		
+	  <!-- Lettering Sheet -->
+	  <div id="sizing">
+	  	<?php include("includes/latin/sizing.php"); ?>			
 	  </div>
 
 	  <!-- Lettering Sheet -->
@@ -121,7 +128,7 @@ $(document).ready(function(){
 
 	  <!-- Hinting (Content injected via constants.js) -->
 	  <div id="hinting">
-	  		<div style="width: 960px;" contenteditable="true">
+	  		<div contenteditable="true">
 				
 				<p class="sizelabel"><?php echo $_SERVER['HTTP_USER_AGENT'] ?></p><p>&nbsp;</p>
 				
