@@ -3,7 +3,7 @@ var GRUMPIES = {
         'text': "Grumpy wizards make toxic brew for the evil Queen and Jack. A quick movement of the enemy will jeopardize six gunboats. The job of waxing linoleum frequently peeves chintzy kids. My girl wove six dozen plaid jackets before she quit. Twelve ziggurats quickly jumped a finch box.",
         'columns': [ // single column
             {
-                sizes: [144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12],
+                sizes: [190, 166, 144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12],
                 innerblock: 'div'
             }
         ],
@@ -13,8 +13,8 @@ var GRUMPIES = {
     'long': {
         'text': "Grumpy wizards make toxic brew for the evil Queen and Jack. One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. 01234567890 ",
         'columns': [ // two columns
-            {sizes: [20, 19, 18, 17], innerblock: '.textsettingCol1'},
-            {sizes: [16, 15, 14, 13, 12, 11, 10], innerblock: '.textsettingCol2'}
+            {sizes: [25, 24, 23, 22, 21, 20], innerblock: '.textsettingCol1'},
+            {sizes: [19, 18, 17, 16, 15, 14, 13, 12, 11, 10], innerblock: '.textsettingCol2'}
         ],
         'tab': '#text'
     },
@@ -22,7 +22,7 @@ var GRUMPIES = {
     'lowercaseShort': {
         'text': "the five boxing wizards jump quickly pack my red box with five dozen quality jugs a very big box sailed up then whizzed quickly from japan",
         'columns': [
-            {sizes: [144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 24, 18], innerblock: 'div:first'}
+            {sizes: [190, 166, 144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 24, 18], innerblock: 'div:first'}
         ],
         'tab': '#lowercases'
     },
@@ -39,7 +39,7 @@ var GRUMPIES = {
     'adhesionShort': {
         'text': "adhesion donnishness indianians deaden on ode so sheenie died dashed dens seaside easines nonseasoned seen hindi said seines sadnesses deaden donnishness dissensions dead",
         'columns': [
-            {sizes: [144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 24, 18], innerblock: 'div:first'}
+            {sizes: [190, 166, 144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 24, 18], innerblock: 'div:first'}
         ],
         'tab': '#adhesion'
     },
@@ -56,7 +56,7 @@ var GRUMPIES = {
     'hamburgefonstivShort': {
         'text': "fortieth boring trait favoring barrage referring thrusting tannest embargo sausage gaining astutest augur hibernate variant hearse beggaring foresee eagerer hearten ensnaring tufting interstate meager veneration stigma feminine tabbing noising trimming throbbing ransoming stiffen oaring fishing rehire overbore bonniest ravishment teensiest mintier shriven unforeseen overrate surgeon smarter submarine revenging assuaging masher amnesia insentient rehashing fresher buttering sorghum thine sitter month serer minting variate torsion gaunt",
         'columns': [
-            {sizes: [144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 24, 18], innerblock: 'div:first'}
+            {sizes: [190, 166, 144, 126, 110, 96, 84, 72, 60, 48, 36, 30, 24, 18], innerblock: 'div:first'}
         ],
         'tab': '#hamburgefonstiv'
     },
@@ -73,7 +73,7 @@ var GRUMPIES = {
     'caps': {
         'text': "Arrowroot Barley Chervil Dumpling Endive Flaxseed Garbanzo Hijiki Ishtu Jicama Kale Lychee Marjoram Nectarine Oxtail Pizza Quinoa Roquefort Squash Tofu Uppuma Vanilla Wheat Xergis Yogurt Zweiback 0 1 2 3 4 5 6 7 8 9 ! ?",
         'columns': [
-            {sizes: [60, 48, 36, 30, 28, 24, 20, 18, 16, 14, 13], innerblock: 'div'}
+            {sizes: [96, 84, 72, 60, 48, 36, 30, 28, 24, 20, 18, 16, 14, 13], innerblock: 'div'}
         ],
         'tab': '#caps'
     },
@@ -81,7 +81,7 @@ var GRUMPIES = {
     'allcaps': {
         'text': "ARROWROOT BARLEY CHERVIL DUMPLING ENDIVE FLAXSEED GARBANZO HIJIKI ISHTU JICAMA KALE LYCHEE MARJORAM NECTARINE OXTAIL PIZZA QUINOA ROQUEFORT SQUASH TOFU UPPUMA VANILLA WHEAT XERGIS YOGURT ZWEIBACK 0 1 2 3 4 5 6 7 8 9 ! ?",
         'columns': [
-            {sizes: [60, 48, 36, 30, 28, 24, 20, 18, 16, 14, 13], innerblock: 'div'}
+            {sizes: [96, 84, 72, 60, 48, 36, 30, 28, 24, 20, 18, 16, 14, 13], innerblock: 'div'}
         ],
         'tab': '#allcaps'
     }
