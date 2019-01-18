@@ -14,7 +14,7 @@ Variables
   --foreground: var(--black);
   --background: var(--white);
   
-  --default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --default: sans-serif;
   --line-height: 24;
   --base: 16;
   --line: calc((var(--line-height) / var(--base)) * 1rem);
